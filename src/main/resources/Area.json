@@ -1,0 +1,625 @@
+{
+    "areas":[
+        {
+            "areaName": "Москва",
+            "URL": "https://www.banki.ru/products/currency/cash/sankt-peterburg/",
+            "nicknames": [
+                {
+                    "name": "Москв"
+                },
+                {
+                    "name": "мск"
+                },
+                {
+                    "name": "столиц"
+                }
+            ]
+        },
+        {
+            "areaName": "Санкт-Петербург",
+            "URL": "https://www.banki.ru/products/currency/cash/sankt-peterburg/",
+            "nicknames": [
+                {
+                    "name": "Санкт-Петербург"
+                },
+                {
+                    "name": "спб"
+                },
+                {
+                    "name": "питер"
+                },
+                {
+                    "name": "петербург"
+                }
+            ]
+        },
+        {
+            "areaName": "Новосибирск",
+            "URL": "https://www.banki.ru/products/currency/cash/novosibirsk/",
+            "nicknames": [
+                {
+                    "name": "новосиб"
+                }
+            ]
+        },
+        {
+            "areaName": "Нижний новгород",
+            "URL": "https://www.banki.ru/products/currency/cash/nizhniy_novgorod/",
+            "nicknames": [
+                {
+                    "name": "нижн"
+                }
+            ]
+        },
+        {
+            "areaName": "Казань",
+            "URL": "https://www.banki.ru/products/currency/cash/kazan~/",
+            "nicknames": [
+                {
+                    "name": "казан"
+                }
+            ]
+        },
+        {
+            "areaName": "Самара",
+            "URL": "https://www.banki.ru/products/currency/cash/samara/",
+            "nicknames": [
+                {
+                    "name": "самар"
+                }
+            ]
+        },
+        {
+            "areaName": "Омск",
+            "URL": "https://www.banki.ru/products/currency/cash/omsk/",
+            "nicknames": [
+                {
+                    "name": "омск"
+                }
+            ]
+        },
+        {
+            "areaName": "Челябинск",
+            "URL": "https://www.banki.ru/products/currency/cash/chelyabinsk/",
+            "nicknames": [
+                {
+                    "name": "челябинск"
+                }
+            ]
+        },
+        {
+            "areaName": "Магнитогорск",
+            "URL": "https://www.banki.ru/products/currency/cash/chelyabinskaya_oblast~/magnitogorsk/",
+            "nicknames": [
+                {
+                    "name": "магнитогорск"
+                },
+                {
+                    "name": "мгн"
+                }
+            ]
+        },
+        {
+            "areaName": "Ростов-на-дону",
+            "URL": "https://www.banki.ru/products/currency/cash/rostov-na-donu/",
+            "nicknames": [
+                {
+                    "name": "ростов"
+                }
+            ]
+        },
+        {
+            "areaName": "Волгоград",
+            "URL": "https://www.banki.ru/products/currency/cash/volgograd/",
+            "nicknames": [
+                {
+                    "name": "волгоград"
+                }
+            ]
+        },
+        {
+            "areaName": "Уфа",
+            "URL": "https://www.banki.ru/products/currency/cash/ufa/",
+            "nicknames": [
+                {
+                    "name": "уф"
+                }
+            ]
+        },
+        {
+            "areaName": "Пермь",
+            "URL": "https://www.banki.ru/products/currency/cash/perm~/",
+            "nicknames": [
+                {
+                    "name": "перм"
+                }
+            ]
+        },
+        {
+            "areaName": "Воронеж",
+            "URL": "https://www.banki.ru/products/currency/cash/voronezh/",
+            "nicknames": [
+                {
+                    "name": "воронеж"
+                }
+            ]
+        },
+        {
+            "areaName": "Саратов",
+            "URL": "https://www.banki.ru/products/currency/cash/saratov/",
+            "nicknames": [
+                {
+                    "name": "саратов"
+                }
+            ]
+        },
+        {
+            "areaName": "Екатеринбург",
+            "URL": "https://www.banki.ru/products/currency/cash/ekaterinburg/",
+            "nicknames": [
+                {
+                    "name": "екатеринбург"
+                },
+                {
+                    "name": "екб"
+                }
+            ]
+        },
+        {
+            "areaName": "Краснодар",
+            "URL": "https://www.banki.ru/products/currency/cash/krasnodar/",
+            "nicknames": [
+                {
+                    "name": "краснодар"
+                }
+            ]
+        },
+        {
+            "areaName": "Тюмень",
+            "URL": "https://www.banki.ru/products/currency/cash/tyumen~/",
+            "nicknames": [
+                {
+                    "name": "тюмен"
+                }
+            ]
+        },
+        {
+            "areaName": "Тольятти",
+            "URL": "https://www.banki.ru/products/currency/cash/samarskaya_oblast~/tol~yatti/",
+            "nicknames": [
+                {
+                    "name": "тольятти"
+                }
+            ]
+        },
+        {
+            "areaName": "Ижевск",
+            "URL": "https://www.banki.ru/products/currency/cash/izhevsk/",
+            "nicknames": [
+                {
+                    "name": "ижевск"
+                }
+            ]
+        },
+        {
+            "areaName": "Барнаул",
+            "URL": "https://www.banki.ru/products/currency/cash/barnaul/",
+            "nicknames": [
+                {
+                    "name": "барнаул"
+                }
+            ]
+        },
+        {
+            "areaName": "Ульяновск",
+            "URL": "https://www.banki.ru/products/currency/cash/ul~yanovsk/",
+            "nicknames": [
+                {
+                    "name": "ульяновск"
+                }
+            ]
+        },
+        {
+            "areaName": "Иркутск",
+            "URL": "https://www.banki.ru/products/currency/cash/irkutsk/",
+            "nicknames": [
+                {
+                    "name": "иркутск"
+                }
+            ]
+        },
+        {
+            "areaName": "Хабаровск",
+            "URL": "https://www.banki.ru/products/currency/cash/habarovsk/",
+            "nicknames": [
+                {
+                    "name": "хабаровск"
+                }
+            ]
+        },
+        {
+            "areaName": "Ярославль",
+            "URL": "https://www.banki.ru/products/currency/cash/yaroslavl~/",
+            "nicknames": [
+                {
+                    "name": "ярославл"
+                }
+            ]
+        },
+        {
+            "areaName": "Владивосток",
+            "URL": "https://www.banki.ru/products/currency/cash/vladivostok/",
+            "nicknames": [
+                {
+                    "name": "владивосток"
+                },
+                {
+                    "name": "владик"
+                }
+            ]
+        },
+        {
+            "areaName": "Махачкала",
+            "URL": "https://www.banki.ru/products/currency/cash/mahachkala/",
+            "nicknames": [
+                {
+                    "name": "махачкал"
+                }
+            ]
+        },
+        {
+            "areaName": "Томск",
+            "URL": "https://www.banki.ru/products/currency/cash/tomsk/",
+            "nicknames": [
+                {
+                    "name": "томск"
+                }
+            ]
+        },
+        {
+            "areaName": "Оренбург",
+            "URL": "https://www.banki.ru/products/currency/cash/orenburg/",
+            "nicknames": [
+                {
+                    "name": "оренбург"
+                }
+            ]
+        },
+        {
+            "areaName": "Кемерово",
+            "URL": "https://www.banki.ru/products/currency/cash/kemerovo/",
+            "nicknames": [
+                {
+                    "name": "кемеров"
+                }
+            ]
+        },
+        {
+            "areaName": "Новокузнецк",
+            "URL": "https://www.banki.ru/products/currency/cash/kemerovskaya_oblast~/novokuznetssk/",
+            "nicknames": [
+                {
+                    "name": "новокузнецк"
+                }
+            ]
+        },
+        {
+            "areaName": "Рязань",
+            "URL": "https://www.banki.ru/products/currency/cash/ryazan~/",
+            "nicknames": [
+                {
+                    "name": "рязан"
+                }
+            ]
+        },
+        {
+            "areaName": "Астрахань",
+            "URL": "https://www.banki.ru/products/currency/cash/astrahan~/",
+            "nicknames": [
+                {
+                    "name": "астрахан"
+                }
+            ]
+        },
+        {
+            "areaName": "Пенза",
+            "URL": "https://www.banki.ru/products/currency/cash/penza/",
+            "nicknames": [
+                {
+                    "name": "пенз"
+                }
+            ]
+        },
+        {
+            "areaName": "Киров",
+            "URL": "https://www.banki.ru/products/currency/cash/kirov/",
+            "nicknames": [
+                {
+                    "name": "киров"
+                }
+            ]
+        },
+        {
+            "areaName": "Липецк",
+            "URL": "https://www.banki.ru/products/currency/cash/lipetssk/",
+            "nicknames": [
+                {
+                    "name": "липецк"
+                }
+            ]
+        },
+        {
+            "areaName": "Калининград",
+            "URL": "https://www.banki.ru/products/currency/cash/kaliningrad/",
+            "nicknames": [
+                {
+                    "name": "калининград"
+                }
+            ]
+        },
+        {
+            "areaName": "Курск",
+            "URL": "https://www.banki.ru/products/currency/cash/kursk/",
+            "nicknames": [
+                {
+                    "name": "курск"
+                }
+            ]
+        },
+        {
+            "areaName": "Севастополь",
+            "URL": "https://www.banki.ru/products/currency/cash/sevastopol~/",
+            "nicknames": [
+                {
+                    "name": "севастопол"
+                }
+            ]
+        },
+        {
+            "areaName": "Сочи",
+            "URL": "https://www.banki.ru/products/currency/cash/krasnodarskiy_kray/sochi/",
+            "nicknames": [
+                {
+                    "name": "сочи"
+                }
+            ]
+        },
+        {
+            "areaName": "Ставрополь",
+            "URL": "https://www.banki.ru/products/currency/cash/stavropol~/",
+            "nicknames": [
+                {
+                    "name": "ставропол"
+                }
+            ]
+        },
+        {
+            "areaName": "Тверь",
+            "URL": "https://www.banki.ru/products/currency/cash/tver~/",
+            "nicknames": [
+                {
+                    "name": "твер"
+                }
+            ]
+        },
+        {
+            "areaName": "Иваново",
+            "URL": "https://www.banki.ru/products/currency/cash/ivanovo/",
+            "nicknames": [
+                {
+                    "name": "иваново"
+                }
+            ]
+        },
+        {
+            "areaName": "Брянск",
+            "URL": "https://www.banki.ru/products/currency/cash/bryansk/",
+            "nicknames": [
+                {
+                    "name": "брянск"
+                }
+            ]
+        },
+        {
+            "areaName": "Белгород",
+            "URL": "https://www.banki.ru/products/currency/cash/belgorod/",
+            "nicknames": [
+                {
+                    "name": "белгород"
+                }
+            ]
+        },
+        {
+            "areaName": "Сургут",
+            "URL": "https://www.banki.ru/products/currency/cash/hantyi-mansiyskiy_avtonomnyiy_okrug/surgut/",
+            "nicknames": [
+                {
+                    "name": "сургут"
+                }
+            ]
+        },
+        {
+            "areaName": "Владимир",
+            "URL": "https://www.banki.ru/products/currency/cash/vladimir/",
+            "nicknames": [
+                {
+                    "name": "владимир"
+                }
+            ]
+        },
+        {
+            "areaName": "Чита",
+            "URL": "https://www.banki.ru/products/currency/cash/chita/",
+            "nicknames": [
+                {
+                    "name": "чита"
+                },
+                {
+                    "name": "чите"
+                }
+            ]
+        },
+        {
+            "areaName": "Архангельск",
+            "URL": "https://www.banki.ru/products/currency/cash/arhangel~sk/",
+            "nicknames": [
+                {
+                    "name": "архангельск"
+                }
+            ]
+        },
+        {
+            "areaName": "Симферополь",
+            "URL": "https://www.banki.ru/products/currency/cash/simferopol~/",
+            "nicknames": [
+                {
+                    "name": "симферопол"
+                }
+            ]
+        },
+        {
+            "areaName": "Смоленск",
+            "URL": "https://www.banki.ru/products/currency/cash/smolensk/",
+            "nicknames": [
+                {
+                    "name": "смоленск"
+                }
+            ]
+        },
+        {
+            "areaName": "Якутск",
+            "URL": "https://www.banki.ru/products/currency/cash/yakutsk/",
+            "nicknames": [
+                {
+                    "name": "якутск"
+                }
+            ]
+        },
+        {
+            "areaName": "Саранск",
+            "URL": "https://www.banki.ru/products/currency/cash/saransk/",
+            "nicknames": [
+                {
+                    "name": "саранск"
+                }
+            ]
+        },
+        {
+            "areaName": "Курган",
+            "URL": "https://www.banki.ru/products/currency/cash/kurgan/",
+            "nicknames": [
+                {
+                    "name": "курган"
+                }
+            ]
+        },
+        {
+            "areaName": "Вологда",
+            "URL": "https://www.banki.ru/products/currency/cash/vologda/",
+            "nicknames": [
+                {
+                    "name": "волог"
+                }
+            ]
+        },
+        {
+            "areaName": "Владикавказ",
+            "URL": "https://www.banki.ru/products/currency/cash/vladikavkaz/",
+            "nicknames": [
+                {
+                    "name": "владикавказ"
+                }
+            ]
+        },
+        {
+            "areaName": "Подольск",
+            "URL": "https://www.banki.ru/products/currency/cash/moskva_i_oblast~/podol~sk/",
+            "nicknames": [
+                {
+                    "name": "подольск"
+                }
+            ]
+        },
+        {
+            "areaName": "Грозный",
+            "URL": "https://www.banki.ru/products/currency/cash/groznyiy/",
+            "nicknames": [
+                {
+                    "name": "грозн"
+                }
+            ]
+        },
+        {
+            "areaName": "Мурманск",
+            "URL": "https://www.banki.ru/products/currency/cash/murmansk/",
+            "nicknames": [
+                {
+                    "name": "мурманск"
+                }
+            ]
+        },
+        {
+            "areaName": "Тамбов",
+            "URL": "https://www.banki.ru/products/currency/cash/tambov/",
+            "nicknames": [
+                {
+                    "name": "тамбов"
+                }
+            ]
+        },
+        {
+            "areaName": "Петрозаводск",
+            "URL": "https://www.banki.ru/products/currency/cash/petrozavodsk/",
+            "nicknames": [
+                {
+                    "name": "петрозаводск"
+                }
+            ]
+        },
+        {
+            "areaName": "Стерлитамак",
+            "URL": "https://www.banki.ru/products/currency/cash/respublika_basshkortostan/sterlitamak/",
+            "nicknames": [
+                {
+                    "name": "стерлитамак"
+                }
+            ]
+        },
+        {
+            "areaName": "Нижневартовск",
+            "URL": "https://www.banki.ru/products/currency/cash/hantyi-mansiyskiy_avtonomnyiy_okrug/nizhnevartovsk/",
+            "nicknames": [
+                {
+                    "name": "нижневартовск"
+                }
+            ]
+        },
+        {
+            "areaName": "Кострома",
+            "URL": "https://www.banki.ru/products/currency/cash/kostroma/",
+            "nicknames": [
+                {
+                    "name": "костром"
+                }
+            ]
+        },
+        {
+            "areaName": "Новороссийск",
+            "URL": "https://www.banki.ru/products/currency/cash/krasnodarskiy_kray/novorossiysk/",
+            "nicknames": [
+                {
+                    "name": "новороссийск"
+                }
+            ]
+        },
+        {
+            "areaName": "Химки",
+            "URL": "https://www.banki.ru/products/currency/cash/moskva_i_oblast~/himki/",
+            "nicknames": [
+                {
+                    "name": "химк"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "currencies":[
+        {
+            "currencyName": "USD",
+            "nicknames": [
+                {
+                    "name": "dollar"
+                },
+                {
+                    "name": "usd"
+                },
+                {
+                    "name": "бакс"
+                },
+                {
+                    "name": "доллар"
+                }
+            ]
+        },
+        {
+            "currencyName": "EUR",
+            "nicknames": [
+                {
+                    "name": "eur"
+                },
+                {
+                    "name": "евро"
+                },
+                {
+                    "name": "euro"
+                }
+            ]
+        },
+        {
+            "currencyName": "GBP",
+            "nicknames": [
+                {
+                    "name": "gbp"
+                },
+                {
+                    "name": "фунт"
+                },
+                {
+                    "name": "фунтик"
+                },
+                {
+                    "name": "бриташка"
+                }
+            ]
+        },
+        {
+            "currencyName": "CNY",
+            "nicknames": [
+                {
+                    "name": "CNY"
+                },
+                {
+                    "name": "китаец"
+                },
+                {
+                    "name": "юан"
+                },
+                {
+                    "name": "китайц"
+                }
+            ]
+        },
+        {
+            "currencyName": "JPY",
+            "nicknames": [
+                {
+                    "name": "JPY"
+                },
+                {
+                    "name": "японец"
+                },
+                {
+                    "name": "йен"
+                }
+            ]
+        }
+    ]
+}

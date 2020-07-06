@@ -133,9 +133,9 @@ public class EchoBot extends TelegramLongPollingBot {
 
                 if (!findedArea.areaName.equals("Empty")) {
                     defaultAreaMap.put(inChat.getId(), findedArea);
-                    findedBanks = s.parseBanks(findedArea, findedCurrency);
+                    findedBanks = s.parseBanks(s.makeUrl(findedArea, findedCurrency), findedCurrency);
                 } else {
-                    findedBanks = s.parseBanks(defaultArea, findedCurrency);
+                    findedBanks = s.parseBanks(s.makeUrl(defaultArea, findedCurrency), findedCurrency);
                 }
 
                 if (findedBanks.size() == 0) {

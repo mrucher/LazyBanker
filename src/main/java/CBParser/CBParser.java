@@ -7,11 +7,22 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CBParser {
     public static String CBParse(String date, Currency currency) throws IOException {
+
+        Map<String, Integer> indexes = new HashMap<>();
+        indexes.put("USD", 4);
+        indexes.put("EUR", 3);
+        indexes.put("GBP", 6);
+        indexes.put("CNY", 4);
+        indexes.put("JPY", 4);
+
+
         String correctDate = dateNormalize(date);
         Document document = Jsoup.connect("https://www.banki.ru/products/currency/cb/" + correctDate + "/").get();
         Element body = document.body();
@@ -22,26 +33,26 @@ public class CBParser {
             return "";
         }
 
-        int index = 4;
-        switch (currency.currencyName) {
-            case "USD":
-                index = 4;
-                break;
-            case "EUR":
-                index = 3;
-                break;
-            case "GBP":
-                index = 6;
-                break;
-            case "CNY":
-                index = 4;
-                break;
-            case "JPY":
-                index = 4;
-                break;
-        }
+//        int index = 4;
+//        switch (currency.currencyName) {
+//            case "USD":
+//                index = 4;
+//                break;
+//            case "EUR":
+//                index = 3;
+//                break;
+//            case "GBP":
+//                index = 6;
+//                break;
+//            case "CNY":
+//                index = 4;
+//                break;
+//            case "JPY":
+//                index = 4;
+//                break;
+//        }
 
-        return result[index];
+        return result[indexes.get(currency.currencyName)];
     }
 
     public static String findDate(String text) {

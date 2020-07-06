@@ -19,7 +19,7 @@ public class CBParserTest {
     }
 
     @Test
-    public void findDate() {
+    public void findDate() throws IOException {
         assertEquals("04.03.10", CBParser.findDate("04.03.1020"));
         assertEquals("04.03.20", CBParser.findDate("04.03.20"));
         assertEquals("", CBParser.findDate("asvlm ldvlvm 12.12"));

@@ -15,14 +15,18 @@ import java.util.List;
 import java.util.Set;
 
 public class SiteParser {
-    public List<ParseResult> parseBanks(Area area, Currency currency) throws IOException {
+
+
+    public Document makeUrl(Area area, Currency currency) throws IOException {
+        StringBuilder url = new StringBuilder(area.URL);
+        url.insert(Config.defaultURLPart.length()-1, "/" + currency.currencyName);
+        return Jsoup.connect(url.toString()).get();
+    }
+
+    public List<ParseResult> parseBanks(Document document, Currency currency) throws IOException {
         List<ParseResult> result = new ArrayList<>();
         Set<String> findedBanks = new HashSet<>();
 
-        StringBuilder url = new StringBuilder(area.URL);
-        url.insert(Config.defaultURLPart.length()-1, "/" + currency.currencyName);
-
-        Document document = Jsoup.connect(url.toString()).get();
         Element body = document.body();
 
         Elements els = body.select("tr[data-test$=bank-rates-row]");

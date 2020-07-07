@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class Logger {
     public static void logTest(String msg){
-        try(FileWriter writer = new FileWriter("notes3.txt", true))
+        try(FileWriter writer = new FileWriter("log.txt", true))
         {
             writer.append(msg);
             writer.flush();

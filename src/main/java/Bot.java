@@ -69,10 +69,6 @@ public class Bot extends TelegramLongPollingBot {
                 Message inMessage = update.getMessage();
                 Chat inChat = inMessage.getChat();
 
-//                if (!defaultAreaMap.containsKey(inChat.getId())) {
-//                    defaultAreaMap.put(inChat.getId(), defaultArea);
-//                }
-
                 SendMessage outMessage = new SendMessage();
                 outMessage.setChatId(inMessage.getChatId());
 
@@ -91,9 +87,14 @@ public class Bot extends TelegramLongPollingBot {
 
                 if (inMessage.getText().toLowerCase().contains("/start")) {
                     outMessage.setText("Добро пожаловать. Я бот позволяющий узнать курс валюты в ЦБ на определнное число " +
-                            "или курс обмена валют в банках различных городов." + '\n'
+                            "или курс обмена валют в банках различных городов." + '\n'+ '\n'
                             + "Введите /areas чтобы узнать доступные города." + '\n'
-                            + "Введите /currencys чтобы узнать доступные валюты");
+                            + "Введите /currencys чтобы узнать доступные валюты" + '\n'+ '\n'
+                            + "Вот некоторые примеры запросов:" + '\n'+ '\n'
+                            + "Курс евро в Москве" + '\n'
+                            + "Юань спб" + '\n'
+                            + "курс цб доллар" + '\n'
+                            + "Центробанк йена 20.06.2020");
                     execute(outMessage);
                     String logMsg = inMessage.getChatId().toString() + " "
                             + inMessage.getDate().toString() + " "
@@ -132,7 +133,6 @@ public class Bot extends TelegramLongPollingBot {
                 }
 
                 Currency findedCurrency = cp.parse(inMessage.getText());
-                Area findedArea = ap.parse(inMessage.getText());
 
                 if (inChat.isGroupChat() || inChat.isSuperGroupChat()) {
                     if (findedCurrency.currencyName.equals("Empty")) {
@@ -147,118 +147,6 @@ public class Bot extends TelegramLongPollingBot {
 
                 Logger.logTest(result[1]);
 
-//                Currency findedCurrency = cp.parse(inMessage.getText());
-//                Area findedArea = ap.parse(inMessage.getText());
-//
-//                if (inChat.isGroupChat() || inChat.isSuperGroupChat()) {
-//                    if (findedCurrency.currencyName.equals("Empty")) {
-//                        return;
-//                    }
-//                }
-//
-//                if (findedCurrency.currencyName.equals("Empty")) {
-//                    outMessage.setText("Валюта не распознана. Перефразируйте запрос");
-//                    String logMsg = inMessage.getChatId().toString() + " "
-//                            + inMessage.getDate().toString() + " "
-//                            + inMessage.getText() + " "
-//                            + outMessage.getText() + '\n';
-//                    Logger.logTest(logMsg);
-//                    execute(outMessage);
-//                    return;
-//                }
-//
-//                if (CBParser.hasCB(inMessage.getText()) && findedArea.areaName.equals("Empty")) {
-//                    Date dateNow = new Date();
-//                    SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
-//                    String curDate = formatForDateNow.format(dateNow);
-//                    String findDate = CBParser.findDate(inMessage.getText());
-//                    if (!findDate.equals("")) {
-//                        findDate = CBParser.dateNormalize(findDate);
-//                        String[] s1 = findDate.split("\\.");
-//                        String[] s2 = curDate.split("\\.");
-//                        if (Integer.parseInt(s1[2]) > Integer.parseInt(s2[2])
-//                                || (Integer.parseInt(s1[2]) == Integer.parseInt(s2[2]) && Integer.parseInt(s1[1]) > Integer.parseInt(s2[1]))
-//                                || (Integer.parseInt(s1[2]) == Integer.parseInt(s2[2]) && Integer.parseInt(s1[1]) == Integer.parseInt(s2[1]) && Integer.parseInt(s1[0]) > Integer.parseInt(s2[0]))) {
-//                            outMessage.setText("Не только лишь все могут смотреть в завтрашний день. Повторите попытку");
-//                            execute(outMessage);
-//                            String logMsg = inMessage.getChatId().toString() + " "
-//                                    + inMessage.getDate().toString() + " "
-//                                    + inMessage.getText() + " невалидная дата" + '\n';
-//                            Logger.logTest(logMsg);
-//                            return;
-//                        }
-//                        if (Integer.parseInt(s1[2]) < 2005) {
-//                            outMessage.setText("Тогда еще динозавры жили, а курса ЦБ и подавно не было. Повторите попытку");
-//                            execute(outMessage);
-//                            String logMsg = inMessage.getChatId().toString() + " "
-//                                    + inMessage.getDate().toString() + " "
-//                                    + inMessage.getText() + " невалидная дата" + '\n';
-//                            Logger.logTest(logMsg);
-//                            return;
-//                        }
-//
-//
-//                        String findCB = CBParser.CBParse(CBParser.findDate(inMessage.getText()), findedCurrency);
-//
-//                        outMessage.setText("Курс ЦБ на " + CBParser.findDate(inMessage.getText()) + " для " + findedCurrency.currencyName + " равен " + findCB);
-//                        execute(outMessage);
-//                        String logMsg = inMessage.getChatId().toString() + " "
-//                                + inMessage.getDate().toString() + " "
-//                                + inMessage.getText() + " "
-//                                + outMessage.getText() + '\n';
-//                        Logger.logTest(logMsg);
-//                        return;
-//                    } else {
-//                        String findCB = CBParser.CBParse(curDate, findedCurrency);
-//                        outMessage.setText("Курс ЦБ сегодня для " + findedCurrency.currencyName + " равен " + findCB);
-//                        execute(outMessage);
-//                        String logMsg = inMessage.getChatId().toString() + " "
-//                                + inMessage.getDate().toString() + " "
-//                                + inMessage.getText() + '\n';
-//                        Logger.logTest(logMsg);
-//                        return;
-//                    }
-//                }
-//
-//                if (findedArea.areaName.equals("Empty")) {
-//                    outMessage.setText("Город не распознан. Переформулируйте запрос");
-//                    execute(outMessage);
-//                    String logMsg = inMessage.getChatId().toString() + " "
-//                            + inMessage.getDate().toString() + " "
-//                            + inMessage.getText() + " невалидный город" + '\n';
-//                    Logger.logTest(logMsg);
-//                    return;
-//                } else {
-//                    findedBanks = s.parseBanks(s.makeUrl(findedArea, findedCurrency), findedCurrency);
-//                }
-//
-//
-//                if (findedBanks.size() == 0) {
-//                    outMessage.setText("Валюта" + findedCurrency.currencyName
-//                            + " в городе " + findedArea.areaName
-//                            + " не обменивается");
-//                    execute(outMessage);
-//                    String logMsg = inMessage.getChatId().toString() + " "
-//                            + inMessage.getDate().toString() + " "
-//                            + inMessage.getText() + " "
-//                            + outMessage.getText() + '\n';
-//                    Logger.logTest(logMsg);
-//                    return;
-//                }
-//                StringBuilder msg = new StringBuilder(findedCurrency.currencyName + " в городе " + findedArea.areaName + '\n' + '\n');
-//                for (int i = 0; i < Math.min(5, findedBanks.size()); i++) {
-//                    msg.append(findedBanks.get(i).getBankName() + ":" + '\n'
-//                            + "покупка " + findedBanks.get(i).getBuy() + " рублей " + '\n'
-//                            + "продажа " + findedBanks.get(i).getSell() + " рублей " + '\n' + '\n');
-//                }
-//                outMessage.setText(msg.toString());
-//
-//                String logMsg = inMessage.getChatId().toString() + " "
-//                        + inMessage.getDate().toString() + " "
-//                        + inMessage.getText() + " "
-//                        + outMessage.getText() + '\n';
-//                Logger.logTest(logMsg);
-//                execute(outMessage);
             }
         } catch (TelegramApiException e) {
             e.printStackTrace();

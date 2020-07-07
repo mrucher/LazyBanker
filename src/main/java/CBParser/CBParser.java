@@ -52,7 +52,6 @@ public class CBParser {
                 }
             }
             result = result.substring(0, 10);
-           // System.out.println(result);
         }
         return result;
     }

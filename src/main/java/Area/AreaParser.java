@@ -14,7 +14,7 @@ import java.util.Map;
 public class AreaParser {
     Map<String, String> areaMapNicknames = new HashMap<>();
     Map<String, String> areaMapURL = new HashMap<>();
-    GlobalArea globalArea;
+    public GlobalArea globalArea;
 
     public AreaParser() throws IOException {
         globalArea = initGlobalArea();

@@ -13,19 +13,19 @@ public class CBParserTest {
     public void CBParse() throws IOException {
         CurrencyParser cp = new CurrencyParser();
 
-        assertEquals("66.4437", CBParser.CBParse("04.03.2020", cp.globalCurrency.currencies.get(0)));
-        assertEquals("66.9909", CBParser.CBParse("30.02.2020", cp.globalCurrency.currencies.get(0)));
-        assertEquals("33.7956", CBParser.CBParse("04.03.2007", cp.globalCurrency.currencies.get(3)));
+        assertEquals("66.4437", CBParser.parseCB("04.03.2020", cp.globalCurrency.currencies.get(0)));
+        assertEquals("66.9909", CBParser.parseCB("30.02.2020", cp.globalCurrency.currencies.get(0)));
+        assertEquals("33.7956", CBParser.parseCB("04.03.2007", cp.globalCurrency.currencies.get(3)));
     }
 
     @Test
     public void findDate() throws IOException {
-        assertEquals("04.03.10", CBParser.findDate("04.03.1020"));
-        assertEquals("04.03.20", CBParser.findDate("04.03.20"));
+        assertEquals("04.03.2010", CBParser.findDate("04.03.1020"));
+        assertEquals("04.03.2020", CBParser.findDate("04.03.20"));
         assertEquals("", CBParser.findDate("asvlm ldvlvm 12.12"));
         assertEquals("04.03.2020", CBParser.findDate("s 04.03.2020 sa"));
-        assertEquals("04-03-20", CBParser.findDate("04-03-20"));
-        assertEquals("04-03-20", CBParser.findDate("04-03-20 dvxv"));
+        assertEquals("04.03.2020", CBParser.findDate("04-03-20"));
+        assertEquals("04.03.2020", CBParser.findDate("04-03-20 dvxv"));
     }
 
     @Test

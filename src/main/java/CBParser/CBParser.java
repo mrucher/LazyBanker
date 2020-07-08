@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CBParser {
-    public static String CBParse(String date, Currency currency) throws IOException {
+    public static String parseCB(String date, Currency currency) throws IOException {
 
         Map<String, Integer> indexes = new HashMap<>();
         indexes.put("USD", 4);

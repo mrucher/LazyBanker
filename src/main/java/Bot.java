@@ -1,7 +1,6 @@
 import Area.Area;
 import Area.AreaParser;
 import CBParser.CBParser;
-import Config.Config;
 import Currency.Currency;
 import Currency.CurrencyParser;
 import SiteParser.SiteParser;
@@ -16,9 +15,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Класс-обработчик поступающих к боту сообщений.
@@ -29,9 +26,6 @@ public class Bot extends TelegramLongPollingBot {
     SiteParser s = new SiteParser();
 
     List<ParseResult> findedBanks;
-    //Area defaultArea = new Area();
-
-    // Map<Long, Area> defaultAreaMap;
 
     public Bot() {
 
@@ -45,10 +39,6 @@ public class Bot extends TelegramLongPollingBot {
         } catch (IOException e) {
             Logger.logTest("ERROR: Area.json not found");
         }
-
-        //defaultArea.areaName = Config.defaultAreaName;
-        // defaultArea.URL = Config.defaultAreaURL;
-        // defaultAreaMap = new HashMap<>();
 
     }
 
@@ -87,10 +77,10 @@ public class Bot extends TelegramLongPollingBot {
 
                 if (inMessage.getText().toLowerCase().contains("/start")) {
                     outMessage.setText("Добро пожаловать. Я бот позволяющий узнать курс валюты в ЦБ на определнное число " +
-                            "или курс обмена валют в банках различных городов." + '\n'+ '\n'
+                            "или курс обмена валют в банках различных городов." + '\n' + '\n'
                             + "Введите /areas чтобы узнать доступные города." + '\n'
-                            + "Введите /currencys чтобы узнать доступные валюты" + '\n'+ '\n'
-                            + "Вот некоторые примеры запросов:" + '\n'+ '\n'
+                            + "Введите /currencys чтобы узнать доступные валюты" + '\n' + '\n'
+                            + "Вот некоторые примеры запросов:" + '\n' + '\n'
                             + "Курс евро в Москве" + '\n'
                             + "Юань спб" + '\n'
                             + "курс цб доллар" + '\n'
@@ -198,7 +188,7 @@ public class Bot extends TelegramLongPollingBot {
                     }
 
 
-                    String findCB = CBParser.CBParse(CBParser.findDate(text), findedCurrency);
+                    String findCB = CBParser.parseCB(CBParser.findDate(text), findedCurrency);
 
                     result[0] = "Курс ЦБ на " + CBParser.findDate(text) + " для " + findedCurrency.currencyName + " равен " + findCB;
 
@@ -209,7 +199,7 @@ public class Bot extends TelegramLongPollingBot {
 
                     return result;
                 } else {
-                    String findCB = CBParser.CBParse(curDate, findedCurrency);
+                    String findCB = CBParser.parseCB(curDate, findedCurrency);
                     result[0] = "Курс ЦБ сегодня для " + findedCurrency.currencyName + " равен " + findCB;
 
                     result[1] = ID + " "

@@ -13,9 +13,9 @@ public class CBParserTest {
     public void CBParse() throws IOException {
         CurrencyParser cp = new CurrencyParser();
 
-        assertEquals("66.4437", CBParser.CBParse("04.03.2020", cp.globalCurrency.currencies.get(0)));
-        assertEquals("66.9909", CBParser.CBParse("30.02.2020", cp.globalCurrency.currencies.get(0)));
-        assertEquals("33.7956", CBParser.CBParse("04.03.2007", cp.globalCurrency.currencies.get(3)));
+        assertEquals("66.4437", CBParser.parseCB("04.03.2020", cp.globalCurrency.currencies.get(0)));
+        assertEquals("66.9909", CBParser.parseCB("30.02.2020", cp.globalCurrency.currencies.get(0)));
+        assertEquals("33.7956", CBParser.parseCB("04.03.2007", cp.globalCurrency.currencies.get(3)));
     }
 
     @Test
